@@ -46,10 +46,6 @@ section.alternate-background {
   margin: 10px;
 }
 
-.item-double {
-  flex: 2;
-}
-
 /* -------  Navigation ------- */
 
 header {
@@ -86,7 +82,7 @@ header nav ul li a {
 }
 
 header nav ul li:last-child a {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 header nav ul li a:hover {
@@ -98,8 +94,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  
-  
 }
 
 .form-div {
@@ -145,29 +139,52 @@ footer p {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 0 20px;
   align-items: center;
 }
 .logo {
   margin: 14px;
   padding-top: 0;
 }
+/* -------  Form ------- */
 form {
-  display:flex;
+  display: flex;
   justify-content: space-between;
+  
 }
 .form-div {
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex: 1;
 }
+.form-div label {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.form-div input, .form-div select {
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
 
 /* -------  Main Section ------- */
 .group {
   flex-direction: row;
   justify-content: space-between;
 }
-.item {
-  flex-direction: row;
+.item-double {
+  flex: 2;
+  align-self: center;
+}
+.align-center {
+  align-self: center;
+}
+.cut-in-half {
+  flex-basis: calc(50% - 20px);
+}
+.change-to-wrap {
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 }
